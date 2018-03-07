@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MultiSelectListViewSample"
              x:Class="MultiSelectListViewSample.MainPage"
-            xmlns:extension="clr-namespace:MultiSelectListViewSample.Extensions;assembly=MultiSelectListViewSample"
             xmlns:lv="clr-namespace:Xamarin.Forms.MultiSelectListView;assembly=Xamarin.Forms.MultiSelectListView" Padding="0,20,0,0">
 
     <StackLayout>
