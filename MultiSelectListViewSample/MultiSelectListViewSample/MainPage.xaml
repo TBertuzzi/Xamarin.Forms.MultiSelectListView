@@ -10,22 +10,22 @@
             HasUnevenRows="true"
             SeparatorVisibility="Default" 
             ItemsSource="{Binding Users}"
-                  lv:MultiSelectListView.MultiSelect="true">
+                  lv:MultiSelect.Enable="true">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <lv:SelectableViewCell x:Name="SelectableCell">
+                    <lv:SelectableCell x:Name="SelectableCell">
 
-                        <lv:SelectableViewCell.CheckView>
+                        <lv:SelectableCell.CheckView>
                             <Image Source="select.png" WidthRequest="30" HeightRequest="30"></Image>
-                        </lv:SelectableViewCell.CheckView>
+                        </lv:SelectableCell.CheckView>
 
-                        <lv:SelectableViewCell.DataView>
+                        <lv:SelectableCell.DataView>
                             <StackLayout Orientation="Vertical" Padding="20,0,20,0">
                                 <Label Text="{Binding Name}" FontSize="17" ></Label>
                             </StackLayout>
-                        </lv:SelectableViewCell.DataView>
+                        </lv:SelectableCell.DataView>
 
-                    </lv:SelectableViewCell>
+                    </lv:SelectableCell>
 
                 </DataTemplate>
             </ListView.ItemTemplate>

@@ -5,13 +5,13 @@ using System.Text;
 namespace Xamarin.Forms.MultiSelectListView
 {
     [ContentProperty(nameof(DataView))]
-    public class SelectableViewCell : ViewCell
+    public class SelectableCell : ViewCell
     {
         private Grid rootGrid;
         private View dataView;
         private View checkView;
 
-        public SelectableViewCell()
+        public SelectableCell()
         {
             rootGrid = new Grid
             {

@@ -5,15 +5,15 @@ using Xamarin.Forms;
 
 namespace Xamarin.Forms.MultiSelectListView
 {
-    public class MultiSelectListView
+    public class MultiSelect
     {
 
-        public static readonly BindableProperty MultiSelectProperty =
-             BindableProperty.CreateAttached("MultiSelect", typeof(bool), typeof(ListView), false, propertyChanged: OnMultiSelectChanged);
+        public static readonly BindableProperty EnableProperty =
+             BindableProperty.CreateAttached("Enable", typeof(bool), typeof(ListView), false, propertyChanged: OnMultiSelectChanged);
 
-        public static bool GetIsMultiSelect(BindableObject view) => (bool)view.GetValue(MultiSelectProperty);
+        public static bool GetIsMultiSelect(BindableObject view) => (bool)view.GetValue(EnableProperty);
 
-        public static void SetIsMultiSelect(BindableObject view, bool value) => view.SetValue(MultiSelectProperty, value);
+        public static void SetIsMultiSelect(BindableObject view, bool value) => view.SetValue(EnableProperty, value);
 
         private static void OnMultiSelectChanged(BindableObject bindable, object oldValue, object newValue)
         {
