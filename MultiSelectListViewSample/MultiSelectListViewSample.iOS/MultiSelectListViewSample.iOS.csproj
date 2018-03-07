@@ -128,4 +128,7 @@
       <Name>MultiSelectListViewSample</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\select.png" />
+  </ItemGroup>
 </Project>
