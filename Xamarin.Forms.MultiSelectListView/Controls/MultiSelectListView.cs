@@ -9,7 +9,7 @@ namespace Xamarin.Forms.MultiSelectListView
     {
 
         public static readonly BindableProperty MultiSelectProperty =
-             BindableProperty.CreateAttached("IsMultiSelect", typeof(bool), typeof(ListView), false, propertyChanged: OnMultiSelectChanged);
+             BindableProperty.CreateAttached("MultiSelect", typeof(bool), typeof(ListView), false, propertyChanged: OnMultiSelectChanged);
 
         public static bool GetIsMultiSelect(BindableObject view) => (bool)view.GetValue(MultiSelectProperty);
 

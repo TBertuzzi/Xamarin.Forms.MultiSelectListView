@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MultiSelectListViewSample"
+             x:Class="MultiSelectListViewSample.MainPage"
+            xmlns:extension="clr-namespace:MultiSelectListViewSample.Extensions;assembly=MultiSelectListViewSample"
+            xmlns:lv="clr-namespace:Xamarin.Forms.MultiSelectListView;assembly=Xamarin.Forms.MultiSelectListView" Padding="0,20,0,0">
+
+    <StackLayout>
+        <ListView x:Name="lvwDiretoria" 
+            HasUnevenRows="true"
+            SeparatorVisibility="Default" 
+            ItemsSource="{Binding Users}"
+                  lv:MultiSelectListView.MultiSelect="true">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <lv:SelectableViewCell x:Name="SelectableCell">
+
+                        <lv:SelectableViewCell.CheckView>
+                            <Image Source="select.png" WidthRequest="30" HeightRequest="30"></Image>
+                        </lv:SelectableViewCell.CheckView>
+
+                        <lv:SelectableViewCell.DataView>
+                            <StackLayout Orientation="Vertical" Padding="20,0,20,0">
+                                <Label Text="{Binding Name}" FontSize="17" ></Label>
+                            </StackLayout>
+                        </lv:SelectableViewCell.DataView>
+
+                    </lv:SelectableViewCell>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

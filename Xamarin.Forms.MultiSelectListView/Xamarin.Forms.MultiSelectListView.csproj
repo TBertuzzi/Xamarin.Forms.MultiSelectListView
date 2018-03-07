@@ -11,6 +11,9 @@
     <PackageReleaseNotes>Initial Version</PackageReleaseNotes>
     <Copyright>Copyright ©2018 KBits</Copyright>
     <PackageTags>xamarin xamarin.forms controls listview</PackageTags>
+    <PackageIconUrl>https://github.com/TBertuzzi/Xamarin.Forms.MultiSelectListView/blob/master/Resources/MultiSelectListViewIcon.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/TBertuzzi/Xamarin.Forms.MultiSelectListView</RepositoryUrl>
+    <ApplicationIcon>MultiSelectListViewIcon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
