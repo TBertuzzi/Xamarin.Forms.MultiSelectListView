@@ -28,9 +28,9 @@ The "IsSelected" property notifies when an object has been selected.
 
 in the Xaml file we must declare our control xmlns: lv = "clr-namespace: Xamarin.Forms.MultiSelectListView; assembly = Xamarin.Forms.MultiSelectListView", for example . 
 
-Then use the new MultiSelect ListView.MultiSelect property to enable the multiple selection in the listview.
+Then use the new MultiSelect.Enable property to enable the multiple selection in the listview.
 
-we must use the Selectable ViewCell that contains the property to inform the icon of the selection
+we must use the SelectableCell that contains the property to inform the icon of the selection
 
 ```csharp
 
@@ -46,22 +46,22 @@ we must use the Selectable ViewCell that contains the property to inform the ico
             HasUnevenRows="true"
             SeparatorVisibility="Default" 
             ItemsSource="{Binding Users}"
-                  lv:MultiSelectListView.MultiSelect="true">
+                  lv:MultiSelect.Enable="true">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <lv:SelectableViewCell x:Name="SelectableCell">
+                    <lv:SelectableCell x:Name="SelectableCell">
 
-                        <lv:SelectableViewCell.CheckView>
+                        <lv:SelectableCell.CheckView>
                             <Image Source="select.png" WidthRequest="30" HeightRequest="30"></Image>
-                        </lv:SelectableViewCell.CheckView>
+                        </lv:SelectableCell.CheckView>
 
-                        <lv:SelectableViewCell.DataView>
+                        <lv:SelectableCell.DataView>
                             <StackLayout Orientation="Vertical" Padding="20,0,20,0">
                                 <Label Text="{Binding Name}" FontSize="17" ></Label>
                             </StackLayout>
-                        </lv:SelectableViewCell.DataView>
+                        </lv:SelectableCell.DataView>
 
-                    </lv:SelectableViewCell>
+                    </lv:SelectableCell>
 
                 </DataTemplate>
             </ListView.ItemTemplate>
@@ -70,6 +70,7 @@ we must use the Selectable ViewCell that contains the property to inform the ico
     </StackLayout>
 
 </ContentPage>
+
 
 
 
