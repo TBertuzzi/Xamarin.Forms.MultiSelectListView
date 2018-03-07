@@ -7,6 +7,10 @@
     <Company>KBits</Company>
     <Description>Multi-select ListView Control to Xamarin.Forms</Description>
     <PackageLicenseUrl>http://opensource.org/licenses/MS-PL</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/TBertuzzi/Xamarin.Forms.MultiSelectListView</PackageProjectUrl>
+    <PackageReleaseNotes>Initial Version</PackageReleaseNotes>
+    <Copyright>Copyright ©2018 KBits</Copyright>
+    <PackageTags>xamarin xamarin.forms controls listview</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
