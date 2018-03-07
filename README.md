@@ -8,7 +8,7 @@
 
 |Name|Info|
 | ------------------- | :------------------: |
-|MultiSelectListView|[![NuGet](https://img.shields.io/badge/nuget-v1.0.0-blue.svg)](https://www.nuget.org/packages/Xamarin.Forms.MultiSelectListView/)|
+|MultiSelectListView|[![NuGet](https://img.shields.io/badge/nuget-1.0.1-blue.svg)](https://www.nuget.org/packages/Xamarin.Forms.MultiSelectListView/)|
 
 **Platform Support**
 
