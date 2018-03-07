@@ -51,6 +51,7 @@ namespace MultiSelectListViewSample.ViewModel
             user.Name = "Polly";
             Users.Add(user);
 
+
         }
     }
 }
