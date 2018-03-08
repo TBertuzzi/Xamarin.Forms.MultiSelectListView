@@ -42,7 +42,7 @@ we must use the SelectableCell that contains the property to inform the icon of 
             xmlns:lv="clr-namespace:Xamarin.Forms.MultiSelectListView;assembly=Xamarin.Forms.MultiSelectListView" Padding="0,20,0,0">
 
     <StackLayout>
-        <ListView x:Name="lvwDiretoria" 
+        <ListView x:Name="lvwUsers" 
             HasUnevenRows="true"
             SeparatorVisibility="Default" 
             ItemsSource="{Binding Users}"
