@@ -51,6 +51,14 @@ namespace MultiSelectListViewSample.ViewModel
             user.Name = "Polly";
             Users.Add(user);
 
+            user = new User();
+            user.Name = "Rodolfo";
+            Users.Add(user);
+
+            user = new User();
+            user.Name = "Lester";
+            Users.Add(user);
+
 
         }
     }
