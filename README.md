@@ -4,6 +4,8 @@
  
  By default the listview control lets you only select one row at a time. The MultiSelectListView control uses a modified ObservableCollection to mark which rows have been selected.
  
+ You can use any image to mark the selected row.
+ 
  ###### This is the component, works on iOS, Android and UWP.
  
 ![](https://raw.githubusercontent.com/TBertuzzi/Xamarin.Forms.MultiSelectListView/master/Resources/select.png)
