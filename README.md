@@ -15,6 +15,7 @@
 |Name|Info|
 | ------------------- | :------------------: |
 |MultiSelectListView|[![NuGet](https://img.shields.io/badge/nuget-1.0.1-blue.svg)](https://www.nuget.org/packages/Xamarin.Forms.MultiSelectListView/)|
+|Build status|[![appveyor](https://img.shields.io/teamcity/codebetter/bt428.svg)](https://ci.appveyor.com/project/ThiagoBertuzzi/xamarin-forms-multiselectlistview/)|
 
 **Platform Support**
 
