@@ -11,9 +11,9 @@ namespace Xamarin.Forms.MultiSelectListView
         public static readonly BindableProperty EnableProperty =
              BindableProperty.CreateAttached("Enable", typeof(bool), typeof(ListView), false, propertyChanged: OnMultiSelectChanged);
 
-        public static bool GetIsMultiSelect(BindableObject view) => (bool)view.GetValue(EnableProperty);
+        public static bool GetEnable(BindableObject view) => (bool)view.GetValue(EnableProperty);
 
-        public static void SetIsMultiSelect(BindableObject view, bool value) => view.SetValue(EnableProperty, value);
+        public static void SetEnable(BindableObject view, bool value) => view.SetValue(EnableProperty, value);
 
         private static void OnMultiSelectChanged(BindableObject bindable, object oldValue, object newValue)
         {
