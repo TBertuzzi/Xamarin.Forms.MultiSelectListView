@@ -14,10 +14,10 @@
     <PackageIconUrl>https://github.com/TBertuzzi/Xamarin.Forms.MultiSelectListView/blob/master/Resources/MultiSelectListViewIcon.png?raw=true</PackageIconUrl>
     <RepositoryUrl>https://github.com/TBertuzzi/Xamarin.Forms.MultiSelectListView</RepositoryUrl>
     <ApplicationIcon>MultiSelectListViewIcon.ico</ApplicationIcon>
-    <Version>2.1.0-pre1</Version>
+    <Version>2.1.0</Version>
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
     <FileVersion>2.1.0.0</FileVersion>
-    <AssemblyInformationalVersion>2.1.0-pre1</AssemblyInformationalVersion>
+    <AssemblyInformationalVersion>2.1.0</AssemblyInformationalVersion>
   </PropertyGroup>
 
   <ItemGroup>

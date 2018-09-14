@@ -86,10 +86,6 @@
       <Project>{C30DA23E-43BB-4A75-AD21-CDED53601DF8}</Project>
       <Name>MultiSelectListViewSample</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Xamarin.Forms.MultiSelectListView\Xamarin.Forms.MultiSelectListView.csproj">
-      <Project>{B5098E2A-784A-40B9-A2FE-9C11154BA9C9}</Project>
-      <Name>Xamarin.Forms.MultiSelectListView</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\select.png" />

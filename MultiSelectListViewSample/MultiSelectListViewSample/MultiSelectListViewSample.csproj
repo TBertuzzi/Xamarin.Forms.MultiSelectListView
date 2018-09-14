@@ -24,7 +24,4 @@
       <DependentUpon>*.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Xamarin.Forms.MultiSelectListView\Xamarin.Forms.MultiSelectListView.csproj" />
-  </ItemGroup>
 </Project>
