@@ -14,7 +14,7 @@
 
 |Name|Info|
 | ------------------- | :------------------: |
-|MultiSelectListView|[![NuGet](https://img.shields.io/badge/nuget-1.0.1-blue.svg)](https://www.nuget.org/packages/Xamarin.Forms.MultiSelectListView/)|
+|MultiSelectListView|[![NuGet](https://img.shields.io/badge/nuget-2.1.0-blue.svg)](https://www.nuget.org/packages/Xamarin.Forms.MultiSelectListView/)|
 |Build status|[![appveyor](https://img.shields.io/teamcity/codebetter/bt428.svg)](https://ci.appveyor.com/project/ThiagoBertuzzi/xamarin-forms-multiselectlistview/)|
 
 **Platform Support**
@@ -80,6 +80,29 @@ we must use the SelectableCell that contains the property to inform the icon of 
 
 
 
+
+```
+
+
+SelectedItemBehavior to execute the command when the SelectedItem event occurs in ListView. Pass the item selected in ListView to Command. If ClearSelected property is true, SelectedItem property of ListView is cleared after command execution. Default ClearSelected property value is true.
+
+You can use the object of the selected line
+
+```csharp
+
+  <ListView.Behaviors>
+        <lv:SelectedItemBehavior Command="{Binding DisplayNameCommand}"/>
+  </ListView.Behaviors>
+
+```
+
+Or specify the property you want to pass as a parameter
+
+```csharp
+
+  <ListView.Behaviors>
+       <lv:SelectedItemBehavior Command="{Binding DisplayNameCommand}" PropertyName="Name"/
+  </ListView.Behaviors>
 
 ```
 
