@@ -12,8 +12,8 @@ namespace Xamarin.Forms.MultiSelectListView
         public static readonly BindableProperty ClearSelectedProperty =
             BindableProperty.Create(nameof(Command), typeof(bool), typeof(SelectedItemBehavior), true);
 
-        public static readonly BindableProperty PropertyPathProperty =
-            BindableProperty.Create(nameof(PropertyPath), typeof(string), typeof(SelectedItemBehavior));
+        public static readonly BindableProperty PropertyNameProperty =
+            BindableProperty.Create(nameof(PropertyName), typeof(string), typeof(SelectedItemBehavior));
 
         public ICommand Command
         {
@@ -27,10 +27,10 @@ namespace Xamarin.Forms.MultiSelectListView
             set => SetValue(ClearSelectedProperty, value);
         }
 
-        public string PropertyPath
+        public string PropertyName
         {
-            get => (string)GetValue(PropertyPathProperty);
-            set => SetValue(PropertyPathProperty, value);
+            get => (string)GetValue(PropertyNameProperty);
+            set => SetValue(PropertyNameProperty, value);
         }
 
         protected override void OnAttachedTo(ListView bindable)
@@ -51,24 +51,22 @@ namespace Xamarin.Forms.MultiSelectListView
                 return;
 
             object parameter;
-            if (PropertyPath != null)
+            if (PropertyName != null)
             {
-                var propertyNames = PropertyPath.Split('.');
-                object propertyValue = e.SelectedItem;
-                foreach (var propertyName in propertyNames)
+                object propertyValue = (e.SelectedItem as SelectableItem).Data;
+
+                var propInfo = propertyValue.GetType().GetTypeInfo().GetDeclaredProperty(PropertyName);
+                propertyValue = propInfo.GetValue(propertyValue);
+                if (propertyValue == null)
                 {
-                    var propInfo = propertyValue.GetType().GetTypeInfo().GetDeclaredProperty(propertyName);
-                    propertyValue = propInfo.GetValue(propertyValue);
-                    if (propertyValue == null)
-                    {
-                        break;
-                    }
+                    propertyValue = "";
                 }
+
                 parameter = propertyValue;
             }
             else
             {
-                parameter = e.SelectedItem;
+                parameter = (e.SelectedItem as SelectableItem).Data;
             }
 
             if (Command.CanExecute(parameter))

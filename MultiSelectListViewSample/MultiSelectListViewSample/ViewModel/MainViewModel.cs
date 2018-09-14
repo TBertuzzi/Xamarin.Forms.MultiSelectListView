@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Windows.Input;
+using Xamarin.Forms;
 using Xamarin.Forms.MultiSelectListView;
 
 namespace MultiSelectListViewSample.ViewModel
@@ -35,6 +37,17 @@ namespace MultiSelectListViewSample.ViewModel
 
         public MultiSelectObservableCollection<User> Users { get; }
 
+        //public ICommand DisplayNameCommand => new Command<string>(async name =>
+        //{
+        //   await Application.Current.MainPage.DisplayAlert("Selected Name", name, "OK");
+        //});
+
+        public ICommand DisplayNameCommand => new Command<User>(async user =>
+        {
+            await Application.Current.MainPage.DisplayAlert("Selected Name", user.Name, "OK");
+        });
+
+
         public MainViewModel()
         {
             Users = new MultiSelectObservableCollection<User>();
@@ -61,5 +74,7 @@ namespace MultiSelectListViewSample.ViewModel
 
 
         }
+
+
     }
 }
