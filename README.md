@@ -17,6 +17,10 @@
 |MultiSelectListView|[![NuGet](https://buildstats.info/nuget/Xamarin.Forms.MultiSelectListView)](https://www.nuget.org/packages/Xamarin.Forms.MultiSelectListView/)|
 |Build status|[![Build status](https://ci.appveyor.com/api/projects/status/github/TBertuzzi/xamarin-forms-multiselectlistview?branch=master&svg=true)](https://ci.appveyor.com/project/ThiagoBertuzzi/xamarin-forms-multiselectlistview)|
 
+**Build History**
+
+[![Build history](https://buildstats.info/appveyor/chart/ThiagoBertuzzi/xamarin-forms-multiselectlistview?buildCount=33)](https://ci.appveyor.com/project/ThiagoBertuzzi/xamarin-forms-multiselectlistview/history)
+
 **Platform Support**
 
 MultiSelectListView is a .NET Standard 2.0 library.Its only dependency is the Xamarin.Forms
