@@ -90,7 +90,7 @@ we must use the SelectableCell that contains the property to inform the icon of 
 
 SelectedItemBehavior to execute the command when the SelectedItem event occurs in ListView. Pass the item selected in ListView to Command. 
 
-Based on SelectedItemBehavior by Atsushi Nakamura (https://github.com/nuitsjp/Xamarin.Forms.BehaviorsPack).
+Based on SelectedItemBehavior by by [Atsushi Nakamura](https://github.com/nuitsjp) (https://github.com/nuitsjp/Xamarin.Forms.BehaviorsPack).
 
 If ClearSelected property is true, SelectedItem property of ListView is cleared after command execution. Default ClearSelected property value is true.
 
