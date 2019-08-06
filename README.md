@@ -87,6 +87,7 @@ we must use the SelectableCell that contains the property to inform the icon of 
 
 ```
 
+## SelectedItemBehavior
 
 SelectedItemBehavior to execute the command when the SelectedItem event occurs in ListView. Pass the item selected in ListView to Command. 
 
