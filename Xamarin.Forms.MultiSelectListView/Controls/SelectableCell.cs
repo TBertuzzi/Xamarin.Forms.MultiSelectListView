@@ -7,12 +7,33 @@ namespace Xamarin.Forms.MultiSelectListView
     [ContentProperty(nameof(DataView))]
     public class SelectableCell : ViewCell
     {
+        public enum DirectionEnum
+        {
+            Right = 0,
+            Left = 1
+        }
+
+        public static readonly BindableProperty DirectionProperty =
+            BindableProperty.CreateAttached("Direction", typeof(DirectionEnum), typeof(SelectableCell), DirectionEnum.Right, BindingMode.TwoWay);
+
+
+        public DirectionEnum Direction
+        {
+            get => (DirectionEnum)GetValue(DirectionProperty);
+            set
+            {
+                SetValue(DirectionProperty, value);
+            }
+        }
+
         private Grid rootGrid;
         private View dataView;
         private View checkView;
 
         public SelectableCell()
         {
+            var teste = this.Parent.Parent;
+
             rootGrid = new Grid
             {
                 Padding = 12,
@@ -59,7 +80,12 @@ namespace Xamarin.Forms.MultiSelectListView
                 if (checkView != null)
                 {
                     checkView.SetBinding(VisualElement.IsVisibleProperty, nameof(SelectableItem.IsSelected));
-                    Grid.SetColumn(checkView, 1);
+
+                    if (Direction == DirectionEnum.Right)
+                        Grid.SetColumn(checkView, 1);
+                    else
+                        Grid.SetColumn(checkView, 0);
+
                     Grid.SetColumnSpan(checkView, 1);
                     Grid.SetRow(checkView, 0);
                     Grid.SetRowSpan(checkView, 1);
@@ -93,7 +119,13 @@ namespace Xamarin.Forms.MultiSelectListView
                 if (dataView != null)
                 {
                     dataView.SetBinding(BindingContextProperty, nameof(SelectableItem.Data));
-                    Grid.SetColumn(dataView, 0);
+                    //  Grid.SetColumn(dataView, 0);
+
+                    if (Direction == DirectionEnum.Right)
+                        Grid.SetColumn(dataView, 0);
+                    else
+                        Grid.SetColumn(dataView, 1);
+
                     Grid.SetColumnSpan(dataView, 1);
                     Grid.SetRow(dataView, 0);
                     Grid.SetRowSpan(dataView, 1);
