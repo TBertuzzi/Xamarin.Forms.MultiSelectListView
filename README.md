@@ -6,7 +6,7 @@
  
  You can use any image to mark the selected row.
  
- ###### This is the component, works on iOS, Android and UWP.
+ ###### This is the component, works on iOS and Android.
  
 ![](https://raw.githubusercontent.com/TBertuzzi/Xamarin.Forms.MultiSelectListView/master/Resources/select.png)
  
